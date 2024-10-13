@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Menu-div">
+        <h1>Role: <span id="userRole"></span></h1>
+
+        <div id="modpanel" style="display: none;">
+            <h1>Add</h1>
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="studentAge">Age:</label>
+            <input type="number" id="studentAge" name="studentAge" required>
+
+            <label for="studentLeader">Leader:</label>
+            <input type="text" id="studentLeader" name="studentLeader" required>
+
+            <label for="studentFacebook">FB Acc:</label>
+            <input type="text" id="studentFacebook" name="studentFacebook">
+
+            <button id="addStudent">Add Student</button>
+
+            <h1>Remove Student</h1>
+            <label for="removeStudentName">Remove Student Name:</label>
+            <input type="text" id="removeStudentName" name="removeStudentName" required>
+
+            <button id="removeStudent">Click To Remove</button>
+        </div>
+
+        <table id="studentTable">
+            <tr>
+                <th>Names</th>
+                <th>Ages</th>
+                <th>Leaders</th>
+                <th>FB-Accounts</th>
+            </tr>
+            <tr>
+                <td>Nika</td>
+                <td>13</td>
+                <td>No Leader</td>
+                <td>chemi fb</td>
+            </tr>
+        </table>
+
+        <h1>Student List</h1>
+        <div id="studentList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
